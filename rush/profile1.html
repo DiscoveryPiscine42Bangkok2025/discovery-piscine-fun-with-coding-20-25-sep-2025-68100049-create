@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-and-portfolio</title>
+    <style>
+        /* CSS พื้นฐาน */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Trebuchet MS, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ส่วนหัว (Header) */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(to top, #000000, #01ACBD);;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .header-logo {
+            height: 50px;
+        }
+        .header-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .header-nav li {
+            margin-right: 15px;
+        }
+        .header-nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        .header-nav a:hover {
+            color: #b3b3b3;
+        }
+
+        /* ส่วนแบนเนอร์หลัก (Main Banner) */
+        .banner {
+            position: relative;
+            height: 56.25vw; /* สัดส่วน 16:9 */
+            max-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 0 6%;
+        }
+        .banner-content {
+            margin-bottom: 12px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .banner-title {
+            font-size: 4.5vw;
+            margin: 0;
+        }
+        .banner-description {
+            font-size: 1.2vw;
+            max-width: 100%;
+        }
+        .banner-buttons .play-button, .banner-buttons .more-info-button {
+            padding: 5px 19px;
+            border: none;
+            border-radius: 20px;
+            font-size: 17px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+                /* ส่วนแถวของภาพยนตร์ (Movie Rows) */
+        .movie-row {
+            padding: 20px 0;
+            padding-left: 4%;
+        }
+        .movie-row h2 {
+            font-size: 2vw;
+            margin-bottom: 10px;
+        }
+        .row-posters {
+            display: flex;
+            overflow-x: scroll;
+            padding-bottom: 20px;
+        }
+        /* ซ่อน scrollbar */
+        .row-posters::-webkit-scrollbar {
+            display: none;
+        }
+        .row-poster {
+            width: 250px;
+            object-fit: contain;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .row-poster:hover {
+            transform: scale(1.08);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="https://cdn.discordapp.com/attachments/1111274944953843803/1420090206568190074/download.png?ex=68d42191&is=68d2d011&hm=f1b754e6ef8e04c2649d35b3f0f7c7d70c5f23db05ac3ebd181dcaa3a7d3185f&" alt="Logo" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li><a href="profile1.html">Profile 1</a></li>
+                <li><a href="profile2.html">Profile 2</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner" style="background-image: url('https://cdn.discordapp.com/attachments/1420319785618505812/1420332356920938546/19FDE020-4FF1-4281-AA3B-D01C246D2B73.jpg?ex=68d50316&is=68d3b196&hm=a5547a179be18f5cfe40f26cb9a642037953c50c1713b2df62ea6e8bee96fd70&');">
+            <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420332034563244082/IMG_8367.png?ex=68d502c9&is=68d3b149&hm=79e0b986bb136fb5e7494ce9eb2e8b0ed22449a5a3cf326b7bb814cee639529e&" alt="profile" width="400" height="350"class="row-poster">
+
+            <div class="banner-content">
+                <h1 class="banner-title">Natnicha Chaidi</h1>
+                <p class="banner-description">
+                      Nickname : Aim
+                <p class="banner-description">
+                      Date of Birth : 6 May 2007 Age : 18
+                <p class="banner-description">
+                      Nationality : Thai
+                <p class="banner-description">
+                      Education : 
+King Mongkut's Institute of Technology Ladkrabang
+                <p class="banner-description">
+                      Abilities : Play sports
+                <p class="banner-description">
+                      Hobby : swim,Badminton
+                </p>
+            </div>
+        </div>
+        <div class="movie-row">
+            <h2>This is me.</h2>
+            <div class="row-posters">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420353248644300830/IMG_0123.png?ex=68d5168b&is=68d3c50b&hm=5872faca53e63061da2b1a83f2bf592b8455d64bf91840adb30159c2dc5e97ef&=&format=webp&width=800&height=800" alt="Poster 1" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420353249013403679/IMG_0122.png?ex=68d5168b&is=68d3c50b&hm=e63bd96f319c63a890ceb332be44062c8450b964c6121a2eba6c3d20e90e1651&=&format=webp&width=800&height=800" alt="Poster 2" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420353249331904573/IMG_0120.png?ex=68d5168b&is=68d3c50b&hm=e7a480a1af0fc995f53157732aa71bbdf1c0b6df4166f134b08c5996a73bab71&=&format=webp&width=800&height=800" alt="Poster 3" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420353879853240402/IMG_2021.jpg?ex=68d51721&is=68d3c5a1&hm=dd3deb922b3d1715b033882471b5b438766e78e2f65660640b3e729004995c49&=&format=webp&width=800&height=800" alt="Poster 4" class="row-poster">
+                </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>My Activity</h2>
+            <div class="row-posters">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420357900026646529/IMG_9873.jpg?ex=68d51ae0&is=68d3c960&hm=883d223e23f46168e87d4fe294ee48cb5e9297d62570b7a682985b3617c9bdaf&" alt="Poster 6" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420357900794200194/2E23B8C4-61E2-4B91-A127-3F10993276E4.jpg?ex=68d51ae0&is=68d3c960&hm=0775359c6dccd19e51a88dbc444ec229aeaf215b840411254a4170fe2ee41411&" alt="Poster 7" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420358460633256008/IMG_9255.jpg?ex=68d51b65&is=68d3c9e5&hm=a8d6baa1d6b9be9031fa87fa1e5f4d7a7b5f11357b17bc8e9491c9a87728f515" alt="Poster 8" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420358872014786651/IMG_0124.png?ex=68d51bc8&is=68d3ca48&hm=8717b422602516f0c3258b9b782b90b8e828f32b1a4988a5942e3e84bbd5268a" alt="Poster 9" class="row-poster">
+            </div>
+        </div>
+        <div class="movie-row">
+            <h2>My Certificates</h2>
+            <div class="row-posters">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420362524926279790/IMG_7362.jpg?ex=68d51f2f&is=68d3cdaf&hm=4119b4b877a99f61478738e78bc5330c277170ebfc2f81e029f8f6c3af5ca900&" alt="Poster 6" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420362525299703838/IMG_7149.jpg?ex=68d51f2f&is=68d3cdaf&hm=48a74e07d492c98abdf173176367ce6054914d31a395b41dca003faa7217bc58&" alt="Poster 7" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420362524573831231/IMG_7807.jpg?ex=68d51f2e&is=68d3cdae&hm=a046a132631d7c4c068bcf15b2c5220989ca9434da0d0784917c3087b7e9d32c&" alt="Poster 8" class="row-poster">
+                <img src="https://cdn.discordapp.com/attachments/1420319785618505812/1420362524133687377/IMG_1101.jpg?ex=68d51f2e&is=68d3cdae&hm=e7be0ef56f7422b018488c3f706fd413b9fdfb538c2ae9776a5ae3f4be0c64e2&" alt="Poster 9" class="row-poster">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
